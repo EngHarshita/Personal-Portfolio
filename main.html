@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshita- Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.ico" type="image/x-icon"> 
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts - Poppins (Import bold weights for better control) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container navbar-content">
+            <!-- Logo with gradient text -->
+            <h1 class="logo">
+                <a href="#home" class="nav-link" data-section="home">
+                    <span class="gradient-text-logo">Harshita Pal</span>
+                </a>
+            </h1>
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                    <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                    <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                    <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu (hidden by default) -->
+    <nav class="mobile-nav-menu">
+        <div class="close-btn"><i class="fas fa-times"></i></div>
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-nav-link" data-section="home">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link" data-section="about">About</a></li>
+            <li><a href="#projects" class="mobile-nav-link" data-section="projects">Projects</a></li>
+            <li><a href="#skills" class="mobile-nav-link" data-section="skills">Skills</a></li>
+            <li><a href="#contact" class="mobile-nav-link" data-section="contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-content">
+                <!-- Text on Left -->
+                <div class="hero-text">
+                    <h2>Hi, I'm <span class="gradient-text">Harshita Pal</span></h2>
+                    <!-- Dynamic typing effect for roles -->
+                    <div class="hero-roles">
+                        <span id="role-typing-text" class="typing-text"></span><span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description">Designing software using Java involves creating robust, scalable, and maintainable applications by leveraging Java’s object-oriented programming (OOP) principles.</p>
+                    <div class="hero-buttons">
+                        <a href="Harshita_Pal_Resume.pdf" download class="btn btn-outline">
+                            Download Resume <i class="fas fa-download"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-primary smooth-scroll">Get In Touch</a>
+                    </div>
+                </div>
+                <!-- Image on Right -->
+                <div class="hero-image">
+                    <img src="harshita.jpg" alt="Harshita Pal Profile" class="profile-pic">
+                </div>
+            </div>
+            <!-- Scroll to explore (moved, now more of a visual cue) -->
+            <a href="#about" class="scroll-down-arrow smooth-scroll">
+                Scroll to explore <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section common-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content-grid">
+                    <div class="about-card journey-card">
+                        <h3 class="card-title purple-text">My Journey</h3>
+                        <p>I'm Harshita Pal, a Computer Science and Engineering student at IILM University (2023–2027), passionate about building intelligent systems I specialize in developing real-time, data-driven applications.</p>
+                        <p>I love working in a team environment and also bring strong leadership capabilities to any project.</p>
+                    </div>
+                    <div class="about-right-column">
+                        <div class="about-card status-card">
+                            <h3 class="card-title blue-text">Current Status</h3>
+                            <div class="status-item">
+                                <i class="fas fa-briefcase status-icon"></i>
+                                <span>Exploring internship opportunities for 2026</span>
+                            </div>
+                        </div>
+                        <div class="about-card languages-card">
+                            <h3 class="card-title">Languages</h3>
+                            <div class="language-item">
+                                <span>English</span>
+                                <span class="language-tag">Proficient</span>
+                            </div>
+                            <div class="language-item">
+                                <span>Hindi</span>
+                                <span class="language-tag">Native</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (MOVED HERE) -->
+        <section id="projects" class="projects-section common-section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-video-wrapper">
+                            <div class="image">
+                                <img src="student grade tracker.jpg" width="250px" height="250px">
+                            </div>
+                            
+                        </div>
+                        <h3>Student Grade Tracker</h3>
+                        <p>This is a Java-based application designed to help manage and analyze student grades. It allows users to input grades, compute key statistics, and display a summary report through a console.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/EngHarshita/Student_Grade_Tracker_project" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-video-wrapper">
+                           <div class="image 2" >
+                                <img src="Hotel-Management-System.webp" width="250px" height="250px">
+                           </div>
+                        </div>
+                        <h3>Hotel management system</h3>
+                        <p>A comprehensive Java-based Hotel Management System with a modern GUI interface, designed to streamline hotel operations and enhance customer service.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/EngHarshita/Hotel_management_System" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-video-wrapper">
+                            <div class="image3">
+                                <img src="What-is-AI-Chatbot.jpg" width="260px" height="200px" >
+                          </div>
+                        </div>
+                        <h3>AI Chatbot</h3>
+                        <p>It is a Java-based Artificial Intelligence Chatbot that interacts with users through a graphical user interface (GUI) and responds to common queries using basic Natural Language Processing (NLP) and rule-based logic.</p>
+                        <div class="project-links">
+                             <a href="https://github.com/EngHarshita/AI_Chatbot" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-video-wrapper">
+                          <div class="image4">
+                            <img src="weather_img.png" width="260px" height="200px">
+                          </div>
+                        </div>
+                        <h3>Weather App</h3>
+                        <p>A simple weather application built using HTML, CSS, and JavaScript that fetches real-time weather data using a public API.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/EngHarshita/Weather_app" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-video-wrapper">
+                             <div class="image">
+                                <img src="kids_cal.png" width="260px" height="200px">
+                             </div>
+                        </div>
+                        <h3>Kids calculator</h3>
+                        <p>A fun and colorful calculator designed for kids, built using Python. It provides a simple interface for performing basic arithmetic operations like addition, subtraction, multiplication, and division.</p>
+                         <div class="project-links">
+                            <a href="https://github.com/EngHarshita/KIds-Calculator" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section common-section">
+            <div class="container">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrapper skill-blue-gradient">
+                                <i class="fas fa-code skill-icon"></i>
+                            </div>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>C</span><span>Python</span><span>Java</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrapper skill-green-solid">
+                                <i class="fas fa-globe skill-icon"></i>
+                            </div>
+                            <h3>Frameworks & Libraries</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>TensorFlow</span><span>React.js</span><span>Bootstrap</span><span>Tailwind CSS</span><span>Django</span><span>NLP</span><span>Streamlit</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrapper skill-orange-red-gradient">
+                                <i class="fas fa-brain skill-icon"></i>
+                            </div>
+                            <h3>Cloud Computing</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>AWS</span><span>SaaS</span><span>Paas</span><span>IaaS</span><span>Lamda</span><span>Docker</span><span>Kubernates</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrapper skill-red-pink-gradient">
+                                <i class="fas fa-users skill-icon"></i>
+                            </div>
+                            <h3>Soft Skills</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Team Management</span><span>Communication</span><span>Problem Solving</span><span>Creative Thinking</span><span>Innovation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section common-section">
+            <div class="container">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="contact-intro">Reach out to me through my social channels or send an email.</p>
+                <div class="contact-links">
+                    <a href="https://github.com/EngHarshita" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/harshita-pal-4a1a08287/" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://www.instagram.com/harsheyyyy_.?igsh=M2hiOG9kZ3F5cHN1" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="mailto:harshitapal5678@gmail.com" class="contact-link-card">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-top-text">
+                <p>👩‍💻 I’m Harshita Pal, an engineering student with a passion for Cloud Computing and Full Stack Development. I love building innovative solutions and continuously learning new technologies to grow as a developer.</p>
+            </div>
+            <div class="footer-bottom-row">
+                <p>@ Deployed with <span class="heart-emoji">❤️</span> by Harshita pal</p>
+                <a href="" target="_blank" rel="noopener noreferrer" class="github-link">
+                    <i class="fab fa-github"></i> Check this on Github
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed Bottom Social Links (globally visible) -->
+    <div class="fixed-bottom-social-links">
+        <a href="https://github.com/EngHarshita" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/harshita-pal-4a1a08287/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/harsheyyyy_.?igsh=M2hiOG9kZ3F5cHN1" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:harshitapal5678@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
