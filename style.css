@@ -1,6 +1,6 @@
  /* --- Variables --- */
 :root {
-    --page-bg: #0f263c; /* Slightly lighter base background for the page */
+    --page-bg: #142d44; /* Slightly lighter base background for the page */
     --dark-navy: #0A192F; /* This will now be the background for common content sections */
     --light-navy: #112240; /* Background for cards (e.g., skill cards, about me cards) */
     --light-slate: #CCD6F6; /* Brighter white/light gray text */
@@ -49,6 +49,7 @@ a {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+
 }
 
 /* --- Radial Gradient Background Effect (fixed to body) --- */
@@ -100,8 +101,7 @@ body::before {
 .navbar-content {
     display: flex;
     justify-content: space-between;
-    align-items: center
-    ;
+    align-items: center;
     height: 65px; /* Final reduced header height */
 }
 
@@ -777,6 +777,7 @@ body::before {
     color: var(--slate);
     text-align: center;
     padding-bottom: 80px; /* Add extra padding to clear the fixed bottom bar */
+    
 }
 
 .footer-content {
@@ -942,10 +943,17 @@ body::before {
     .navbar-content {
         height: 65px; /* Keep header height consistent on mobile */
     }
+     .hero-section{
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
+        margin-right: 40px;
+        width: 1050px;
+    }   
     /* Logo remains small on mobile as per requirement */
     .hero-text h2 {
         font-size: 2.5rem; /* Further reduce for mobile */
-        white-space: normal; /* Allow Ayushi Kumari to wrap on very small screens */
+        white-space: normal; /* Allow harshita to wrap on very small screens */
     }
     .hero-roles {
         font-size: 1.4rem;
@@ -967,12 +975,32 @@ body::before {
         margin-bottom: 30px;
     }
     /* About section for mobile */
+    
+    .common-section {
+    width: 150vw;
+   }
+   .journey-card{
+      margin-left: 50px;
+      margin-right: 57px;
+   }
+
     .about-right-column {
         flex-direction: column; /* Stack status and languages again on smaller mobiles */
+        margin-left: 50px;
+        margin-right: 50px;
     }
     .status-card, .languages-card {
         width: 100%; /* Take full width when stacked */
         margin: 0; /* Remove side margin */
+        } 
+
+     .projects-grid{
+        flex-wrap: wrap;
+        flex-direction: column;
+     }
+    .contact-section{
+        flex-direction: column;
+        display: flex;
     }
     /* Skills section for mobile - single column */
     .skills-grid {
@@ -993,6 +1021,9 @@ body::before {
     .project-card p {
         font-size: 0.9rem;
     }
+    .footer{
+        width:1150px;;
+     }
     .footer-bottom-row {
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center items when stacked */
@@ -1024,38 +1055,79 @@ body::before {
     .close-btn {
         font-size: 2rem;
     }
+    .hero-section{
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
+        margin-right: 40px;
+        width: 700px;
+    }    
+    
     .hero-text h2 {
         font-size: 2.2rem;
     }
     .hero-roles {
-        font-size: 1.1rem;
-        min-height: 2.2rem;
+        font-size: 1rem;
+        min-height: 2rem;
     }
     .hero-buttons {
         width: 100%;
+        flex-direction: column;
+        gap: 10px;
     }
     .btn {
         width: 90%;
+        text-align: center;
     }
     .hero-image {
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 150px;
+        margin: 15px auto 0;
     }
     .section-title {
         font-size: 1.8rem;
+        text-align: center;
     }
     .skills-grid, .projects-grid, .contact-links {
         grid-template-columns: 1fr;
     }
+    .about-card.journey-card{
+      margin-left: 60px;
+      margin-right: 60px;
+      max-width: fit-content;
+   }
+   .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 50px;
+    flex-direction: column;
+}
+  
     .skill-card, .project-card, .contact-link-card, .about-card {
-        max-width: 320px;
+        max-width: 300px;
         margin: 0 auto;
         width: 100%;
     }
+
+    .contact-link{
+        flex-direction: row;
+    }
+
     .contact-link-card {
         padding: 20px;
     }
-    .footer-content {
-        gap: 15px;
+     .footer-content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
     }
+     .footer{
+        width:800px;;
+     }
+    .common-section{
+        width: 800px;
+    }  
+    
 }
